@@ -22,7 +22,9 @@ const App: FC = () => {
 
     }, [])
 
-    console.log('hey')
+    const clickHandler = () => {
+        console.log('.')
+    }
 
 
     return (
@@ -34,7 +36,9 @@ const App: FC = () => {
                         id={id}
                         name={name}
                         username={username}
-                        email={email}> </UserComponent>)
+                        email={email}
+                        xxx={clickHandler}
+                    />)
             }
 
         </>
